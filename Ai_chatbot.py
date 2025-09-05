@@ -9,7 +9,7 @@ while True:
     msg = input("User: ")
     
     # Exit condition
-    if user_input.lower() in ["exit", "quit", "stop"]:
+    if msg.lower() in ["exit", "quit", "stop"]:
         print("Chat ended.")
         break
     
