@@ -1,13 +1,19 @@
 client = OpenAI(api_key="<OPENAI_API_TOKEN>")
 
 messages = [{"role": "system", "content": "You are a helpful math tutor that speaks concisely."}]
-user_msgs = ["Explain what pi is.", "Summarize this in two bullet points."]
 
-# Loop over the user questions
-for msg in user_msgs:
-    print("User: ", msg)
+print("Chatbot ready! Type 'exit' to stop.\n")
+
+while True:
+    # Take input from the user
+    msg = input("User: ")
     
-    # Create a dictionary for the user message from q and append to messages
+    # Exit condition
+    if user_input.lower() in ["exit", "quit", "stop"]:
+        print("Chat ended.")
+        break
+    
+    # Add user input to messages
     user_dict = {"role": "user", "content": msg}
     messages.append(user_dict)
     
