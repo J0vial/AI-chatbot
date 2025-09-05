@@ -1,6 +1,6 @@
 client = OpenAI(api_key="<OPENAI_API_TOKEN>")
 
-messages = [{"role": "system", "content": "You are a helpful math tutor that speaks concisely."}]
+messages = [{"role": "system", "content": "You are a helpful computer science tutor that speaks concisely."}]
 
 print("Chatbot ready! Type 'exit' to stop.\n")
 
